@@ -1,4 +1,4 @@
-OUTPUT=hello_1.0_amd64.deb
+OUTPUT=hello_1.1_amd64.deb
 DIST_DIR=dist/
 
 build: ${OUTPUT}

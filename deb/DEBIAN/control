@@ -1,5 +1,5 @@
 Package: nonocast-hello
-Version: 1.0
+Version: 1.1
 Architecture: amd64
 Maintainer: Hui Cao <nonocast@gmail.com>
 Description: This is my first deb package
