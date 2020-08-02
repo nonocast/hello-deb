@@ -6,5 +6,8 @@ build: ${OUTPUT}
 ${OUTPUT}:
 	dpkg -b deb ${DIST_DIR}${OUTPUT}
 
+install:
+	dpkg -i ${DIST_DIR}${OUTPUT}
+
 clean:
 	rm -f ${BIST_DIR}*
