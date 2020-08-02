@@ -1,0 +1,5 @@
+Package: hello
+Version: 1.0
+Architecture: amd64
+Maintainer: Hui Cao <nonocast@gmail.com>
+Description: This is my first deb package
