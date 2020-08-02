@@ -1,4 +1,4 @@
-OUTPUT=hello_1.1_amd64.deb
+OUTPUT=nonocast-hello_1.1_amd64.deb
 DIST_DIR=dist/
 
 build: ${OUTPUT}
