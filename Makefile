@@ -4,7 +4,7 @@ DIST_DIR=dist/
 build: ${OUTPUT}
 
 ${OUTPUT}:
-	dpkg -b deb ${OUTPUT}
+	dpkg -b deb ${DIST_DIR}${OUTPUT}
 
 clean:
 	rm -f ${BIST_DIR}*
