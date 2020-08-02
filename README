@@ -1,0 +1,28 @@
+# DEB
+
+> Debian packages are standard Unix ar archives that include two tar archives. One archive holds the control information and another contains the installable data.[2]Debian packages are standard Unix ar archives that include two tar archives. One archive holds the control information and another contains the installable data.[2]
+
+deb是Debian binary package format缩写, 本质上就是符合格式规范的tar文件。
+
+- naming: soft_ver-rev_arch.deb, eg. hello_1.0_amd64.deb
+- install: dpkg -i hello.deb
+- info: dpkg -I hello.deb
+- listfiles: dpkg -L hello.deb
+- remove: dpkg -r hello.deb 
+- reconfigure: dpkg-reconfigure hello.deb
+
+- [Debian Polocy Manual](http://www.debian.org/doc/debian-policy/)
+
+# DebianRepository Setup
+
+
+仓库分为official和trivial两种类型，我们只需要看一下简单的trivial就行
+
+trivial archive 目录结构:
+- Packages
+- hello.deb
+
+使用时只需要在/etc/apt/sources.list中加入 `deb http://example.org/debian ./`
+
+- [DebianRepository/Setup - Debian Wiki](https://wiki.debian.org/DebianRepository/Setup?action=show&redirect=HowToSetupADebianRepository)
+- [搭建Debian仓库 | Rickylss Blog](https://rickylss.github.io/os/linux/2020/05/12/debian-repositry/)

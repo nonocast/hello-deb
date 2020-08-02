@@ -6,7 +6,7 @@ build: ${OUTPUT}
 ${OUTPUT}:
 	dpkg -b deb ${DIST_DIR}${OUTPUT}
 
-install:
+install: build
 	dpkg -i ${DIST_DIR}${OUTPUT}
 
 clean:
