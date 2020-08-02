@@ -9,5 +9,8 @@ ${OUTPUT}:
 install: build
 	dpkg -i ${DIST_DIR}${OUTPUT}
 
+package:
+	cd repo && dpkg-scanpackages -m . > Packages
+
 clean:
 	rm -f ${BIST_DIR}*
