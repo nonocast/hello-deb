@@ -22,7 +22,8 @@ trivial archive 目录结构:
 - Packages
 - hello.deb
 
-使用时只需要在/etc/apt/sources.list中加入 `deb http://example.org/debian ./`
+使用时只需要在/etc/apt/sources.list中加入 `deb http://example.org/debian ./`，然后`dpkg-scanpackages -m . > Packages`自动生成Packages文件
 
 - [DebianRepository/Setup - Debian Wiki](https://wiki.debian.org/DebianRepository/Setup?action=show&redirect=HowToSetupADebianRepository)
 - [搭建Debian仓库 | Rickylss Blog](https://rickylss.github.io/os/linux/2020/05/12/debian-repositry/)
+- [Easy way to create a Debian package and local package repository - LinuxConfig.org](https://linuxconfig.org/easy-way-to-create-a-debian-package-and-local-package-repository)

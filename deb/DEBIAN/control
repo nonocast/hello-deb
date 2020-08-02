@@ -1,4 +1,4 @@
-Package: hello
+Package: nonocast-hello
 Version: 1.0
 Architecture: amd64
 Maintainer: Hui Cao <nonocast@gmail.com>
